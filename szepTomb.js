@@ -4,7 +4,7 @@ function szepTomb(tomb) {
         return false;
     }
 
-    // Ellenőrzi, hogy az összes elem azonos típusú-e
+   
     const elsoTipus = typeof tomb[0];
     for (let i = 1; i < tomb.length; i++) {
         if (typeof tomb[i] !== elsoTipus) {
@@ -12,11 +12,11 @@ function szepTomb(tomb) {
         }
     }
 
-    // Ha minden elem azonos típusú, akkor igaz
+   
     return true;
 }
 
-// Példa használat
+
 let eredmeny1 = szepTomb([1, 2, 3, 4, 5]); // true
 let eredmeny2 = szepTomb(["a", "b", "c"]); // true
 let eredmeny3 = szepTomb([1, "two", 3]); // false
